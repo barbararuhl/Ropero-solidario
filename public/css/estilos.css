@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    border: 0;
+}
+
+/*--- Header Nav ---*/
+
+.navbar{
+    margin-bottom: 0px; 
+}
+
+/*--- Footer ---*/
+
+.fixed-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.fixed-footer .navbar-nav{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*--- Imagenes fondos ---*/
+
+.fondo-home {
+    background: url('../img/pichome.jpg') center center / cover fixed;
+}
+
+.fondo-nosotros {
+     background: url('../img/picnosotros.jpg') center center / cover fixed;    
+}
+
+.fondo-contacto {
+     background: url('../img/piccontacto.jpg') center center / cover fixed;    
+}
+
+.fondo-productos {
+     background: url('../img/picproductos.jpg') center center / cover fixed;    
+}
+
+.fondo-productos-mujeres {
+     background: url('../img/picproductos-mujer.jpg') center center / cover fixed;    
+}
+
+.fondo-faqs {
+     background: url('../img/picfaqs.jpg') center center / cover fixed;    
+}
+
+.fondo-login {
+    background: url('../img/piclogin.jpg') center center / cover fixed;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,.7);
+}
+
+/*--- Home seccion ---*/
+
+.seccion-home {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    width: 70vw;
+    margin: 30px auto;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.seccion-home h5 {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 28px;
+}
+
+/*--- Nosotros seccion ---*/
+
+.seccion-nosotros  {
+    width: 70vw;
+    height: 70vh;
+    margin: 30px auto;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+
+.seccion-nosotros h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.seccion-nosotros h3 {
+    font-size: 18px;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+}
+
+.seccion-nosotros h4 {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: justify;
+    line-height: 36px;
+}
+
+/*--- Contacto seccion ---*/
+
+.titucontacto {
+    text-align: center;
+    color: #ffffff;
+}
+
+.formulario-contacto  {
+    width: 480px;
+    margin: 20px auto;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.formulario-contacto h4 {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.formulario-contacto label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+input[type=text] {
+    color: #ffffff;
+    width: 100%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: rgba(255, 255, 255,0);
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=email] {
+    color: #ffffff;
+    width: 100%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: rgba(255, 255, 255,0);
+}
+
+input[type=email]:focus {
+    border: 3px solid #555;
+}
+
+.button {
+    background-color: #ff9966;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.formulario-contacto .radio-genero {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+.formulario-contactoEnviado  {
+    width: 600px;
+    margin: 100px auto;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.picEnviado {
+    width: 400px;
+}
+
+/*--- Formularios info ---*/
+
+.formulario-registracion p {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: justify;
+    line-height: 22px;
+}
+
+
+.formulario-registracion  {
+    width: 480px;
+    margin: 30px auto;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.formulario-registracion h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.formulario-registracion label {
+    color: #ffffff;
+}
+
+.formulario-registracion input {
+    color: #ffffff;
+}
+
+.formulario-registracion h4 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/*--- Faqs ---*/
+
+.seccion-faqs  {
+    width: 70vw;
+    margin: 30px auto;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.seccion-faqs p {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.seccion-faqs h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.seccion-faqs h4 {
+    color: #ffffff;
+    text-align: left;
+}
+
+
+/*--- PRODUCTOS Categorias ---*/
+
+.categoria-mujer {
+    width: 200px;
+    height: 200PX;
+    margin: 30px auto;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.categoria-hombre {
+    width: 200px;
+    height: 200PX;
+    margin: 30px auto;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.categoria-nenes {
+    width: 200px;
+    height: 200PX;
+    margin: 30px auto;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+/*--- registri login ---*/
+
+.row {
+    margin-top: 50px;
+}
+
+
+
+/*--- Breakpoints ---*/
+
+@media only screen and (max-width: 768px) {
+
+/*--- Footer Mobile ---*/
+
+.fixed-footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.fixed-footer .navbar-nav{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.seccion-faqs h1 {
+    font-size: 22px;
+}
+
+.formulario-contacto h1 {
+    font-size: 22px;
+}
+
+.seccion-nosotros {
+    height: 100%;
+}
+
+
+.seccion-nosotros h2 {
+    font-size: 22px;
+}
+
+.seccion-nosotros h3 {
+    color: #ffffff;
+    text-align: left;
+    text-align: justify;
+    line-height: 26px;
+}
+
+.seccion-nosotros h4 {
+    color: #ffffff;
+    text-align: left;
+    text-align: justify;
+    line-height: 26px;
+}
+
+.formulario-contactoEnviado  {
+    width: 100vw;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.picEnviado {
+    width: 300px;
+}
+
+
+}
