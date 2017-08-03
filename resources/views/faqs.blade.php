@@ -21,7 +21,7 @@
 
 
 	<section>
-		<h1>PREGUNTAS FRECUENTES</h1><br>
+		<h3>- PREGUNTAS FRECUENTES -</h3><br>
 
 		<h4>1. La ropa esta en buen estado?</h4>	
 

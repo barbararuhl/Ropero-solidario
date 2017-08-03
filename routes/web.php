@@ -25,6 +25,14 @@ Route::get('/nosotros', 'NosotrosController@mostrar');
 
 Route::get('/productos', 'ProductosController@mostrar');
 
+Route::get('/dashboard', function() {
+	return view('admin/dashboard');
+});
+
+Route::post('/dashboard/crear', 'ProductosController@crear');
+
+Route::post('/dashboard/eliminar', 'ProductosController@eliminar');
+
 Route::get('/productos/mujeres', 'ProductosController@mostrarMujeres');
 
 Route::get('/productos/hombres', 'ProductosController@mostrarHombres');

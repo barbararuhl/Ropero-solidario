@@ -17,13 +17,15 @@
 
 @include('header')
 
-<div class="formulario-contacto">
- 
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Contacto</div>
+                <div class="panel-body">
          <form action="/contacto" method="post">
          {{ csrf_field() }}
           <fieldset>
-            <h4>CONTACTANOS</h4>
-           
 
             <label for="nombre"> Escribi tu nombre:</label>
             <br>
@@ -34,15 +36,6 @@
              @endif
             <input class="input-contacto" type="text" name="nombre" required placeholder="Nombre y Apellido"> 
             <br>
-
-        
-            <input type="radio" name="genero" value="femenino"> 
-            <span class="radio-genero">Femenino</span>
-            <input type="radio" name="genero" value="masculino"> 
-            <span class="radio-genero">Masculino</span>
-            <input type="radio" name="genero" value="otro"> 
-            <span class="radio-genero">Otro</span>
-            <br><br>
 
             <label for="email"> Correo electroico </label>
             <br>
@@ -86,6 +79,10 @@
          </form>
         </fieldset>
 
+</div>
+</div>
+</div>
+</div>
 </div>
 
 @include('footer')

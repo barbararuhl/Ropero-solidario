@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Productos Mujeres</title>
+  <title>Productos Niños</title>
   <link rel="stylesheet" href="{{ URL::asset('../../public/css/home.css') }}" />
   <link rel="icon" type="image/png" href="/img/icono.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/estilos.css">
 </head>
-<body class="fondo-productos-mujeres">
+<body class="fondo-productos-nenes">
 
 @include('header')
 
@@ -21,7 +21,7 @@
   <ol class="breadcrumb">
     <li><a href="index">Home</a></li>
     <li><a href="productos">Productos</a></li>
-    <li><a href="productos/mujeres">Mujeres</a></li>  
+    <li><a href="productos/nenes">Niños</a></li>  
   </ol>
 </div>
 <div>

@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css">
 </head>
 <body class="fondo-login">
         <nav class="navbar navbar-inverse">
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index"><img src="img/Logo-prueba.png" alt="logotipo" class="logo" width="50px"></a>
+      <a class="navbar-brand" href="index"><img src="/img/Logo-prueba.png" alt="logotipo" class="logo" width="30px"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
