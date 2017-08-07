@@ -19,24 +19,33 @@
 
 <div class="#">                   
   <ol class="breadcrumb">
-    <li><a href="index">Home</a></li>
-    <li><a href="productos">Productos</a></li>  
+    <li><a href="/index">Home</a></li>
+    <li><a href="/productos">Productos</a></li>  
   </ol>
 </div>
 
+<div class="productos">
+
 <div class="categoria-mujer">
-<h1><a href="productos/mujeres">MUJERES</a> </h1>
+    <img class="pic-categorias" src="/img/productos/cat-mujeres.jpg" alt="Avatar">
+    <br>
+    <a href="/productos/mujeres">MUJERES</a>
 </div>
+
 
 <div class="categoria-hombre">
-<h1><a href="productos/hombres">HOMBRES</a> </h1>
+    <img class="pic-categorias" src="/img/productos/cat-hombres.jpg">
+    <br>
+    <a href="/productos/hombres">HOMBRES</a>
 </div>
+
 
 <div class="categoria-nenes">
-<h1><a href="productos/nenes">NIÑOS</a> </h1>
+    <img class="pic-categorias" src="/img/productos/cat-nenes.jpg">
+    <br>
+    <a href="/productos/nenes">NIÑOS</a>
 </div>
-
-
+</div>
 
 @include('footer')
 

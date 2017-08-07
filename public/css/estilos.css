@@ -17,6 +17,7 @@ body {
 
 .fixed-footer{
     position: fixed;
+    z-index: 1;
     width: 100%;
     bottom: 0;
     text-align: center;
@@ -30,8 +31,11 @@ body {
 
 /*--- Imagenes fondos ---*/
 
-.fondo-home {
-    background: url('../img/pichome.jpg') center center / cover fixed;
+.video-home {
+    position: fixed;
+    z-index: 2;
+    height: 80%;
+    width: 100%;
 }
 
 .fondo-nosotros {
@@ -43,7 +47,7 @@ body {
 }
 
 .fondo-productos {
-     background: url('../img/picproductos.jpg') center center / cover fixed;    
+     background: url('../img/picproductos-cat.jpg') center center / cover fixed;    
 }
 
 .fondo-productos-mujeres {
@@ -72,6 +76,7 @@ body {
 
 /*--- Home seccion ---*/
 
+
 .seccion-home {
     font-family: 'Raleway', sans-serif;
     color: #ffffff;
@@ -83,6 +88,8 @@ body {
     box-sizing: border-box;
     border-radius: 2px;
     text-align: center;
+    position: relative;
+    z-index: 3;
 }
 
 .seccion-home h5 {
@@ -300,46 +307,173 @@ input[type=email]:focus {
 
 /*--- PRODUCTOS Categorias ---*/
 
-.categoria-mujer {
-    width: 200px;
-    height: 200PX;
-    margin: 30px auto;
-    background-color:rgba(0,0,0,0.7);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border-radius: 2px;
-    text-align: center;
-}
-
-.categoria-hombre {
-    width: 200px;
-    height: 200PX;
-    margin: 30px auto;
-    background-color:rgba(0,0,0,0.7);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border-radius: 2px;
-    text-align: center;
-}
-
-.categoria-nenes {
-    width: 200px;
-    height: 200PX;
-    margin: 30px auto;
-    background-color:rgba(0,0,0,0.7);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border-radius: 2px;
+.productos {
     text-align: center;
 }
 
 .breadcrumb {
     background-color: inherit;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .breadcrumb a {
     color: #333333;
 }
+
+.pic-categorias {
+    width: 350px;
+}
+
+.pic-categorias {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255,0.3);
+}
+
+.categoria-mujer:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #333333;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.categoria-hombre:hover .overlay {
+  opacity: 1;
+}
+.categoria-nenes:hover .overlay {
+  opacity: 1;
+}
+
+.producto-div {
+    display: inline-block;
+    width: 400px;
+    height: 450PX;
+    margin-top: 30px;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.producto-div h2 {
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.producto-div h4 {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+.producto-div h5 {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+.producto-div p {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+.picproduto-general {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+
+/*--- PRODUCTOS Mujer ---*/
+
+.categoria-mujer {
+    display: inline-block;
+    width: 400px;
+    height: 450PX;
+    margin-top: 30px;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.categoria-mujer a {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*--- PRODUCTOS Hombre ---*/
+
+.categoria-hombre {
+    display: inline-block;
+    width: 400px;
+    height: 450PX;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.categoria-hombre a {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*--- PRODUCTOS Niños ---*/
+
+.categoria-nenes {
+    display: inline-block;
+    width: 400px;
+    height: 450PX;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color:rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.categoria-nenes a {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
 
 /*--- registro login ---*/
 
@@ -405,13 +539,15 @@ input[type=password]:focus {
 
 .fixed-footer{
     position: relative;
+    display: block;
+    float: left;
     width: 100%;
-    bottom: 0;
+    bottom: 0px;
+    margin-top: 30px;
     text-align: center;
 }
 
 .fixed-footer .navbar-nav{
-    position: relative;
     left: 50%;
     transform: translate(-50%);
 }
@@ -461,5 +597,22 @@ input[type=password]:focus {
     width: 300px;
 }
 
+/*--- PRODUCTOS Categorias ---*/
+
+.pic-categorias {
+    width: 350px;
+}
+
+
+.categoria-mujer {
+    margin-left: 0;
+}
+
+.categoria-hombre {
+    margin-left: 0;
+}
+.categoria-nenes {
+    margin-left: 0;
+}
 
 }

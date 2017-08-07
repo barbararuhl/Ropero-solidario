@@ -17,6 +17,10 @@
 
 @include('header')
 
+<div class="video-home">
+  <video src="../img/producto-general.mp4" autoplay loop></video>
+</div>
+
 <div class="seccion-home">
 
 <img src="img/Logo-prueba.png" width="200px">

@@ -19,27 +19,35 @@
 
 <div class="#">                   
   <ol class="breadcrumb">
-    <li><a href="index">Home</a></li>
-    <li><a href="productos">Productos</a></li>
-    <li><a href="productos/hombres">Hombres</a></li>  
+    <li><a href="/index">Home</a></li>
+    <li><a href="/productos">Productos</a></li>
+    <li><a href="/productos/hombres">Hombres</a></li>  
   </ol>
 </div>
+
+
+<div class="productos">
 <div>
   <ul>
     @foreach ($productos as $producto)
+    <div class="producto-div">
     <li>
-    <div>
-      {{$producto->precio}}
-      </div>
-      <div>
-      {{$producto->prenda}}
-      </div>
+        
+      <img class="picproduto-general" src="/img/productos/todos/9.jpg" />
+      <h2> <a href="/producto"> {{$producto->prenda}} </a></h2>
+
+       <p> {{$producto->detalle}} </p>
+
+       <h4> $ {{$producto->precio}} - Talle: {{$producto->talle}} </h4> 
+
     </li>
+    </div>
     @endforeach
   </ul>
+
   {{$productos->links()}}
 </div>
-@include('footer')
+
 
 </body>
 </html>

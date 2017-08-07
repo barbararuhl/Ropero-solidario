@@ -4,29 +4,29 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Producto;
+use Storage;
 
 class ProductosController extends Controller
 {
     
 	public function mostrar () {
 		return view('productos');
-
 	}
 
 	public function mostrarMujeres(){
-		$productos = Producto::where('clase', 'mujer')->paginate(1);
+		$productos = Producto::where('clase', 'mujer')->paginate(3);
 
 		return view('productos.mujeres')->with('productos', $productos);
 	}
 
 	public function mostrarHombres(){
-		$productos = Producto::where('clase', 'hombre')->paginate(8);
+		$productos = Producto::where('clase', 'hombre')->paginate(3);
 
 		return view('productos.hombres')->with('productos', $productos);
 	}
 
 	public function mostrarNenes (){
-		$productos = Producto::where('clase', 'nene')->paginate(8);
+		$productos = Producto::where('clase', 'nene')->paginate(3);
 
 		return view('productos.nenes')->with('productos', $productos);
 	}
@@ -40,7 +40,10 @@ class ProductosController extends Controller
 		$producto->talle = $request->talle;
 		$producto->detalle = $request->detalle;
 		$producto->clase = $request->clase;
-		//$producto->avatar = $request->avatar;
+
+		$path = Storage::putFile('productos', $request->file('avatar'));
+		$producto->avatar = $path;
+
 
 		$producto->save();
 

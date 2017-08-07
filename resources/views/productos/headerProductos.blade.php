@@ -13,12 +13,12 @@
       <ul class="nav navbar-nav">
         <li><a href="nosotros">Nosotros</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="productos">Productos <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="/productos">Productos <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="productos">Categorias</a></li>
-            <li><a href="productos.mujeres">Mujeres</a></li>
-            <li><a href="productos.hombres">Hombres</a></li>
-            <li><a href="productos.nenes">Niños</a></li>
+            <li><a href="/productos">Categorias</a></li>
+            <li><a href="/productos.mujeres">Mujeres</a></li>
+            <li><a href="/productos.hombres">Hombres</a></li>
+            <li><a href="/productos.nenes">Niños</a></li>
           </ul>
         </li>
         <li><a href="contacto">Contacto</a></li>
@@ -52,6 +52,7 @@
                             </li>
                         @endif
                     </ul>
+
 
 
     </div>

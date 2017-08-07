@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index"><img src="/img/Logo-prueba.png" alt="logotipo" class="logo" width="30px"></a>
+      <a class="navbar-brand" href="/index"><img src="/img/Logo-prueba.png" alt="logotipo" class="logo" width="30px"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
